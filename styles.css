@@ -38,5 +38,7 @@ button,a{
 #new-game{
  display: none;
  text-decoration: none;
+ width: 290px;
+ font-size: 25.5px; 
 }
 
