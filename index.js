@@ -29,6 +29,7 @@ function renderGame () {
      }
     if(sum<21){
         message="Do you want to draw a new card? 😊"
+        document.querySelector("#new-card").display= 'block' ;
         
     }
     else if(sum===21){
