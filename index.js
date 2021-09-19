@@ -44,7 +44,7 @@ function renderGame () {
     else{
         message= "You are out of the game! 😭"
         isAlive=false;
-       document.querySelector("#new-card").textContent="NEW GAME" 
+       
        document.querySelector("#new-card").style.display = 'none'
     }
 
