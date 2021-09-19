@@ -41,8 +41,9 @@ function renderGame () {
         message= "Wohoo! You've got Blackjack! 🥳"
         flag=true;
         document.querySelector("#prize-el").textContent= "You won Rs 10,000 🚀"
-       
         document.querySelector("#new-card").style.display ='none'
+        document.querySelector("#new-game").style.display='block'
+        document.querySelector("#start-game").style.display='none'
         
     }
     
@@ -51,8 +52,10 @@ function renderGame () {
         looseSound.play();
         message= "You are out of the game! 😭"
         isAlive=false;
-       
+       document.querySelector("#prize-el").textContent= "You lost Rs 1,000 🤢"
        document.querySelector("#new-card").style.display = 'none'
+       document.querySelector("#new-game").style.display='block'
+       document.querySelector("#start-game").style.display='none'
     }
 
     messageEl.textContent=message
