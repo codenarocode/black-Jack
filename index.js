@@ -6,7 +6,7 @@ let flag= false
 let isAlive= true
 let cards=[firstCard,secondCard];
 document.querySelector("#start-game").addEventListener("click", renderGame)
-document.querySelector("#new-card").addEventListener("click",newCard)
+//document.querySelector("#new-card").addEventListener("click",newCard)
 
  let message=""
 let messageEl = document.querySelector("#message-el")
