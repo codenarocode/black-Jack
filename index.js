@@ -6,7 +6,7 @@ let flag= false
 let isAlive= true
 let cards=[firstCard,secondCard];
 document.querySelector("#start-game").addEventListener("click", renderGame)
-//document.querySelector("#new-card").addEventListener("click",newCard)
+
 
  let message=""
 let messageEl = document.querySelector("#message-el")
@@ -42,9 +42,7 @@ function renderGame () {
         flag=true;
         document.querySelector("#prize-el").textContent= "You won Rs 10,000 🚀"
         document.querySelector("#new-card").style.display ='none'
-        document.querySelector("#new-game").style.display='block'
-        document.querySelector("#start-game").style.display='none'
-        
+     
     }
     
     else{
@@ -54,11 +52,11 @@ function renderGame () {
         isAlive=false;
        document.querySelector("#prize-el").textContent= "You lost Rs 1,000 🤢"
        document.querySelector("#new-card").style.display = 'none'
+    
+    }
        document.querySelector("#new-game").style.display='block'
        document.querySelector("#start-game").style.display='none'
-    }
-
-    messageEl.textContent=message
+       messageEl.textContent=message
 
 }
 
