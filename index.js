@@ -35,7 +35,7 @@ function renderGame () {
         message= "Wohoo! You've got Blackjack! 🥳"
         flag=true;
         document.querySelector("#new-card").textContent="NEW GAME" 
-        document.querySelector("#new-card").onclick = "https://codenarocode.github.io/black-Jack/"
+        document.querySelector("#new-card").onclick = "location.href='https://codenarocode.github.io/black-Jack/' "
         
     }
     
@@ -43,7 +43,7 @@ function renderGame () {
         message= "You are out of the game! 😭"
         isAlive=false;
        document.querySelector("#new-card").textContent="NEW GAME" 
-       document.querySelector("#new-card").onclick = "https://codenarocode.github.io/black-Jack/"
+       document.querySelector("#new-card").onclick = "location.href='https://codenarocode.github.io/black-Jack/' "
     }
 
     messageEl.textContent=message
