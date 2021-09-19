@@ -34,6 +34,7 @@ function renderGame () {
     else if(sum===21){
         message= "Wohoo! You've got Blackjack! 🥳"
         flag=true;
+       document.querySelector("#prize-el").textContent= "You won Rs 10,000 🚀"
         document.querySelector("#new-card").textContent="NEW GAME" 
         document.querySelector("#new-card").onclick = "location.href='https://codenarocode.github.io/black-Jack/';"
         
