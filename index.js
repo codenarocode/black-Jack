@@ -28,20 +28,27 @@ function renderGame () {
            cardEl.textContent += cards[i]+" ";
      }
     if(sum<21){
+        let leftSound = new Audio ("Sounds/gameLeft.mp3");
+        leftSound.play();
         message="Do you want to draw a new card? 😊"
         document.querySelector("#new-card").style.display = 'block'
         
     }
     else if(sum===21){
+        let winSound = new Audio ("Sounds/gameWin.mp3");
+        winSound.play();
+     
         message= "Wohoo! You've got Blackjack! 🥳"
         flag=true;
-       document.querySelector("#prize-el").textContent= "You won Rs 10,000 🚀"
+        document.querySelector("#prize-el").textContent= "You won Rs 10,000 🚀"
        
         document.querySelector("#new-card").style.display ='none'
         
     }
     
     else{
+        let looseSound = new Audio ("Sounds/gameLoose.mp3");
+        looseSound.play();
         message= "You are out of the game! 😭"
         isAlive=false;
        
