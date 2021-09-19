@@ -15,7 +15,7 @@ h1{
 
 
 
-button{
+button,a{
    background-color: goldenrod;
    width: 300px;
    color: #016f32; 
@@ -32,5 +32,10 @@ button{
 
 #new-card{
     display:none;
+}
+
+#new-game{
+ display: none;
+ text-decoration: none;
 }
 
