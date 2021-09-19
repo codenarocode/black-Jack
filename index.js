@@ -34,7 +34,8 @@ function renderGame () {
     else if(sum===21){
         message= "Wohoo! You've got Blackjack! 🥳"
         flag=true;
-        document.querySelector("#new-card").style.display='none'
+        document.querySelector("#new-card").textContent="NEW GAME" 
+        document.querySelector("#new-card").setAttribute("onclick", "https://codenarocode.github.io/black-Jack/")
         
     }
     
